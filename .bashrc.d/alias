@@ -7,7 +7,7 @@ alias gitx='/usr/local/bin/'
 alias drush='/usr/bin/drush/drush'
 alias drushinstall='git clone https://github.com/puginabox/drupal-installation.git && cd drupal-installation && drush dl -y --drupal-project-rename=newsite && mv siteinstall.make newsite && cd newsite && drush make -y siteinstall.make && drush site-install -y --db-url=mysql://root:Sunshine2@127.0.0.1:3306/koto --account-name=admin --account-pass=admin && drush en -y pathologic && drush en -y views && drush en -y pathauto && drush en -y devel && drush en -y token && drush en -y entityconnect && drush en -y ctools && drush en -y features && drush en -y tao && drush en -y tinynav && drush en -y adaptive_image && drush en -y adaptivetheme && drush en -y parallax && drush en -y coder'
 alias gitignore='git clone https://gist.github.com/a9996faa66c13cc78904.git && cd a9996faa66c13cc78904 && mv .gitignore .. && cd .. && rm -rf a9996faa66c13cc78904'
-
+export PATH=$PATH:/usr/local/Cellar/mongodb/3.0.2/bin
 
 
 # OBSOLETE
