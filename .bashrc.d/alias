@@ -1,8 +1,17 @@
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias composer='/usr/local/bin/composer/composer.phar'
+#alias composer='/usr/bin/composer/composer.phar'
 alias bashed='cd ~/.bashrc.d'
-alias sandbox='cd ~/Sites/sandbox'
-alias grunter='git clone git@github.com:puginabox/front-end-project-starter.git && mv front-end-project-starter avatar && cd avatar && bower install  && sudo npm install && grunt'
-alias angularized='git clone git@github.com:puginabox/angular-starter.git && cd angular-starter && bower install  && sudo npm install && grunt'
-alias served=‘sandbox && cd ANGULAR && git clone git@github.com:puginabox/server.git && cd server && sh install.sh'
+alias sandbox='cd ~/Documents/SugarSync/Sites/sandbox'
+alias gitx='/usr/local/bin/'
+alias drush='/usr/bin/drush/drush'
+alias drushinstall='git clone https://github.com/puginabox/drupal-installation.git && cd drupal-installation && drush dl -y --drupal-project-rename=newsite && mv siteinstall.make newsite && cd newsite && drush make -y siteinstall.make && drush site-install -y --db-url=mysql://root:Sunshine2@127.0.0.1:3306/koto --account-name=admin --account-pass=admin && drush en -y pathologic && drush en -y views && drush en -y pathauto && drush en -y devel && drush en -y token && drush en -y entityconnect && drush en -y ctools && drush en -y features && drush en -y tao && drush en -y tinynav && drush en -y adaptive_image && drush en -y adaptivetheme && drush en -y parallax && drush en -y coder'
+alias gitignore='git clone https://gist.github.com/a9996faa66c13cc78904.git && cd a9996faa66c13cc78904 && mv .gitignore .. && cd .. && rm -rf a9996faa66c13cc78904'
+
+
+
+# OBSOLETE
+#alias angularized='git clone git@github.com:puginabox/angular-starter.git && cd angular-starter && bower install  && sudo npm install && grunt'
+#alias grunter='git clone git@github.com:puginabox/front-end-project-starter.git && mv front-end-project-starter avatar && cd avatar && bower install  && sudo npm install && grunt'
+#alias strayer='cd ~/Sites/strayer'
+#alias longform='cd ~/Sites/strayer/docroot/sites/all/modules/custom/long_form/SCSS && sass --watch long_form_program_overview.scss:../CSS/long_form_program_overview.css'
