@@ -2,3 +2,4 @@ export PATH=$PATH:/usr/bin/composer
 export PATH=$PATH:/usr/bin/drush/drush
 export PATH=$PATH:/usr/local/Cellar/mongodb/3.0.2/bin
 export EDITOR=/usr/bin/nano
+export PATH=$PATH:/usr/local/Cellar/mongodb/3.0.2/bin
