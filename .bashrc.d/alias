@@ -21,6 +21,7 @@ alias drupalmodule='git clone https://github.com/puginabox/drupal-module-starter
 alias gitignore='git clone https://gist.github.com/a9996faa66c13cc78904.git && cd a9996faa66c13cc78904 && mv .gitignore .. && cd .. && rm -rf a9996faa66c13cc78904'
 alias gitbranch='git branch --all'
 alias gitx='/usr/local/bin/'
+alias gitfiles='git log --name-only'
 
 # AngularJS stuff
 alias angularized='git clone git@github.com:puginabox/angular-starter.git && cd angular-starter && bower install  && sudo npm install && gulp'
