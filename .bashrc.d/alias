@@ -10,9 +10,11 @@ alias sandbox='cd /Users/Shared/SugarSync/Sites/sandbox'
 # Drush stuff
 alias drushcc='drush vset preprocess_css 0 --yes && drush vset preprocess_js 0 --yes && drush vset cache 0 --yes && drush vset page_compression 0 --yes && drush pm-disable memcache* --yes && drush cc all —yes'
 alias drush='/usr/bin/drush/drush'
+### Create a new MySQL database
+alias drushdatabase='drush si -y --db-url=mysql://root:root@localhost/new_database'
+### Complete Drupal install & configure with drush
 alias drushinstall='git clone https://github.com/puginabox/drupal-installation.git && cd drupal-installation && drush dl -y --drupal-project-rename=newsite && mv siteinstall.make newsite && cd newsite && drush make -y siteinstall.make && drush site-install -y --db-url=mysql://root:Sunshine2@127.0.0.1:3306/koto --account-name=admin --account-pass=admin && drush en -y pathologic && drush en -y views && drush en -y pathauto && drush en -y devel && drush en -y token && drush en -y entityconnect && drush en -y ctools && drush en -y features && drush en -y tao && drush en -y tinynav && drush en -y adaptive_image && drush en -y adaptivetheme && drush en -y parallax && drush en -y coder'
-
-# Drupal Module starter template
+### Drupal Module starter template
 alias drupalmodule='git clone https://github.com/puginabox/drupal-module-starter.git && cd drupal-module-starter'
 
 # Git stuff
