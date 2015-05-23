@@ -29,7 +29,7 @@ alias angularized='git clone git@github.com:puginabox/angular-starter.git && cd 
 
 # Strayer stuff
 alias strayer='cd ~/Sites/strayer'
-alias strayersass='cd ~/Sites/strayer/docroot/sites/all/themes/strayer_subtheme/Sass/'
+alias strayersass='cd ~/Sites/strayer/docroot/sites/all/themes/strayer_subtheme/Sass/npm/ && gulp'
 
 
 # OBSOLETE
